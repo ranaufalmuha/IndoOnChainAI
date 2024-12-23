@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "IndoOnChainAI_backend": {
+      "main": "src/IndoOnChainAI_backend/main.mo",
+      "type": "motoko"
+    },
+    "IndoOnChainAI_frontend": {
+      "dependencies": [
+        "IndoOnChainAI_backend"
+      ],
+      "source": [
+        "src/IndoOnChainAI_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "IndoOnChainAI_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

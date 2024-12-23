@@ -2,7 +2,10 @@
   "canisters": {
     "IndoOnChainAI_backend": {
       "main": "src/IndoOnChainAI_backend/main.mo",
-      "type": "motoko"
+      "type": "motoko",
+      "controllers": [
+        "ic_0"
+      ]
     },
     "IndoOnChainAI_frontend": {
       "dependencies": [
